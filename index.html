@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScriptStringMethod</title>
+</head>
+
+<body>
+    <h2>Java Script String Methods</h2>
+    <p>Basic Methods</p>
+    <p id="Fruits"></p>
+    <p id="day"></p>
+
+    <script>
+        var stringOne = "Richard";
+        var stringTwo = new RegExp("Nisha");
+        var result = stringTwo.test(stringOne);
+        document.write(result);
+        document.write("<br>")
+        var string = "Amazing";
+        document.write(string.toUpperCase());
+        document.write("<br>")
+        document.write(string.toLowerCase());
+        document.write("<br>")
+        document.write("<br>")
+        document.write("Using Loops")
+        document.write("<br>")
+        var Fruits = ["Apple", "Banana", "Dragon Fruit", "Watermelon", "Grapes"]
+        document.write(Fruits);
+
+        var text = "";
+        var i;
+        for (i = 0; i < Fruits.length; i++) {
+            text = text + Fruits[i] + "<br>";
+        }
+        document.write("<br>")
+        document.getElementById("Fruits").innerHTML = text;
+        document.write("<br>")
+        document.write("<br>")
+        document.write(Fruits[2]);
+
+        var day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+                break;
+        }
+        document.getElementById("day").innerHTML = "Today is " + day;
+    </script>
+</body>
+
+</html>
